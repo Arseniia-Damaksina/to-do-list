@@ -7,8 +7,70 @@
 body {
   width: 100vw;
   height: 100hv;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #222222;
 }
 
 h1 {
-    color: blueviolet;
+  color: whitesmoke;
+}
+
+form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: flex-start;
+}
+
+#todo-input {
+  height: 30px;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background: none;
+  color: white;
+  padding: 0 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.button__add {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: none;
+  border: 1px solid whitesmoke;
+  margin-left: 10px;
+  color: whitesmoke;
+}
+
+.button__add:hover {
+  background: whitesmoke;
+  color: #222222;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  color: whitesmoke;
+  margin: 5px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
 }
